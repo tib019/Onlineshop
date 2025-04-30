@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Mystery Boxen</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Vintage Mystery Boxen</h1>
+            <nav>
+                <a href="#shop">Shop</a>
+                <a href="#about">Über Uns</a>
+                <a href="#contact">Kontakt</a>
+                <a href="Impressum.html">Impressum</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container">
+                <h2>Deine Überraschungsbox mit Vintage Marken-Kleidung</h2>
+                <p>Hochwertige Secondhand-Mode für Privatkunden & Großhandel.</p>
+                <a href="#shop" class="btn">Jetzt entdecken</a>
+            </div>
+        </section>
+
+        <section id="shop">
+            <div class="container">
+                <h2>Unsere Mystery Boxen</h2>
+                <div class="box-container">
+                    <!-- 250kg Branded Mix Box -->
+                    <div class="box" onclick="showDetails('250kg')">
+                        <img src="img/250kg-box.jpg" alt="250kg Branded Mix">
+                        <h3>250kg Branded Mix</h3>
+                        <p>Hosen, Jacken, Hoodies, T-Shirts etc.</p>
+                        <span class="price">Preis auf Anfrage</span>
+                    </div>
+
+                    <!-- 10kg Mystery Boxen in Einzelkategorien -->
+                    <div class="box" onclick="showDetails('10kg-jacken')">
+                        <img src="img/jacken-box.jpg" alt="10kg Jacken Box">
+                        <h3>10kg Jacken Box</h3>
+                        <p>Jacken in verschiedenen Styles.</p>
+                        <span class="price">€89.99</span>
+                    </div>
+                    <div class="box" onclick="showDetails('10kg-hosen')">
+                        <img src="img/hosen-box.jpg" alt="10kg Hosen Box">
+                        <h3>10kg Hosen Box</h3>
+                        <p>Hosen für jedes Wetter.</p>
+                        <span class="price">€69.99</span>
+                    </div>
+                    <div class="box" onclick="showDetails('10kg-pullover')">
+                        <img src="img/pullover-box.jpg" alt="10kg Pullover Box">
+                        <h3>10kg Pullover Box</h3>
+                        <p>Warm und stylisch – Pullover für jeden Anlass.</p>
+                        <span class="price">€79.99</span>
+                    </div>
+                    <div class="box" onclick="showDetails('10kg-tshirts')">
+                        <img src="img/tshirts-box.jpg" alt="10kg T-Shirts Box">
+                        <h3>10kg T-Shirts Box</h3>
+                        <p>Vielfältige T-Shirts für jeden Tag.</p>
+                        <span class="price">€49.99</span>
+                    </div>
+                    <div class="box" onclick="showDetails('10kg-sonstiges')">
+                        <img src="img/sonstiges-box.jpg" alt="10kg Sonstige Box">
+                        <h3>10kg Sonstige Box</h3>
+                        <p>Weitere Artikel wie Hüte, Gürtel, etc.</p>
+                        <span class="price">€59.99</span>
+                    </div>
+
+                    <!-- 1.5kg Mystery Boxen in Einzelkategorien -->
+                    <div class="box" onclick="showDetails('1.5kg-jacken')">
+                        <img src="img/jacken-box.jpg" alt="1.5kg Jacken Box">
+                        <h3>1.5kg Jacken Box</h3>
+                        <p>Stylische Jacken für den Winter.</p>
+                        <span class="price">€39.99</span>
+                    </div>
+                    <div class="box" onclick="showDetails('1.5kg-hosen')">
+                        <img src="img/hosen-box.jpg" alt="1.5kg Hosen Box">
+                        <h3>1.5kg Hosen Box</h3>
+                        <p>Bequeme Hosen für alle Gelegenheiten.</p>
+                        <span class="price">€29.99</span>
+                    </div>
+                    <div class="box" onclick="showDetails('1.5kg-pullover')">
+                        <img src="img/pullover-box.jpg" alt="1.5kg Pullover Box">
+                        <h3>1.5kg Pullover Box</h3>
+                        <p>Bequeme Pullover für kalte Tage.</p>
+                        <span class="price">€34.99</span>
+                    </div>
+                    <div class="box" onclick="showDetails('1.5kg-tshirts')">
+                        <img src="img/tshirts-box.jpg" alt="1.5kg T-Shirts Box">
+                        <h3>1.5kg T-Shirts Box</h3>
+                        <p>Verschiedene T-Shirts in allen Größen.</p>
+                        <span class="price">€19.99</span>
+                    </div>
+                    <div class="box" onclick="showDetails('1.5kg-sonstiges')">
+                        <img src="img/sonstiges-box.jpg" alt="1.5kg Sonstige Box">
+                        <h3>1.5kg Sonstige Box</h3>
+                        <p>Coole Accessoires und Einzelteile.</p>
+                        <span class="price">€24.99</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <p>Kontaktiere uns über folgende Kanäle oder fülle das Formular aus:</p>
+                <div class="social-links">
+                    <a href="#" class="icon whatsapp">📱 WhatsApp</a>
+                    <a href="#" class="icon instagram">📷 Instagram</a>
+                    <a href="mailto:info@vintagemysteryboxen.de" class="icon email">✉️ E-Mail</a>
+                </div>
+
+                <!-- Kontaktformular -->
+                <form id="contact-form">
+                    <input type="text" name="name" placeholder="Dein Name" required>
+                    <input type="email" name="email" placeholder="Deine E-Mail" required>
+                    <textarea name="message" placeholder="Deine Nachricht" required></textarea>
+                    <button type="submit" class="btn">Absenden</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Vintage Mystery Boxen | <a href="impressum.html">Impressum</a></p>
+        </div>
+    </footer>
+</body>
+</html>
